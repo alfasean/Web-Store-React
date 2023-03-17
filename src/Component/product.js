@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './../CSS/style.css';
 
 const Product = () => {
     const url = 'https://fakestoreapi.com/products';
@@ -17,10 +18,9 @@ const Product = () => {
     return (
         <div className='container'>
             <div className='row'>
-            <h1>My Product</h1>
             {product.map ((produk) => {
               return (
-                <div className='col-3'>
+                <div className='col-3 items'>
                 <Cardproduct 
                 key={produk.id} 
                 title={produk.title} 
@@ -36,15 +36,15 @@ const Product = () => {
 
 function Cardproduct(props) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.image} style={{height : 'auto'}}/>
+    <Card className='items' style={{ width: '15rem', marginTop : '20px'}}>
+      <Card.Img variant="top" src={props.image} style={{height : '10rem', padding : '20px'}}/>
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title className='title'>{props.title}</Card.Title>
         <Card.Text>
           {props.desc}
-          <p>Price : {props.price}$</p>
+          <p className='harga'>${props.price}</p>
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary" className='button-cart'>Add to Cart</Button>
       </Card.Body>
     </Card>
   );
