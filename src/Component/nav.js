@@ -4,21 +4,20 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './../CSS/style.css';
-import  logo from './../Assets/app-store.png'
+import  logo from './../Assets/logo.png'
 
 function Header() {
   return (
-    <Navbar expand="lg" style={{backgroundColor : '#2C74B3'}}>
+    <Navbar expand="lg" style={{backgroundColor : '#FFF'}}>
       <Container>
       <Navbar.Brand href="#home">
             <img
               src={logo}
-              width="45"
-              height="45"
+              width="80"
+              height="80"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
-            <p className="text-white d-inline-block align-top mx-2 name">Axilo Store</p>
           </Navbar.Brand>
         <Navbar.Brand href="#"></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -36,14 +35,14 @@ function Header() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-light">Search</Button>
+            <Button className="button-search">Search</Button>
           </Form>
 
             
           </Nav>
           <Navbar.Collapse className="justify-content-end">
-          <Button variant='outline-light' className="mx-2">MASUK</Button>
-          <Button>DAFTAR</Button>
+          <Button className="mx-2 button-masuk">MASUK</Button>
+          <Button className="mx-2 button-daftar">DAFTAR</Button>
         </Navbar.Collapse>
         </Navbar.Collapse>
       </Container>

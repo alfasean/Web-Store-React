@@ -1,7 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppinss:wght@900&display=swap');
 
 * {
     font-family: 'Poppins';
+}
+
+body {
+    background-color: #E5E0FF;
+}
+
+.button-search {
+    background-color: #fff !important;
+    border-color: #00c2cb !important;
+    color: black;
+}
+
+.button-search:hover {
+    background-color: #FF9628 !important;
+    border: none;
+}
+
+.button-daftar {
+    background-color: #00c2cb;
+    border: none;
+}
+
+.button-daftar:hover {
+    background-color: #00c2cb;
+    border: none;
+}
+
+.button-masuk {
+    background-color: #fff !important;
+    border-color: #00c2cb !important;
+    color: black;
+}
+
+.button-masuk:hover {
+    background-color: #FF9628 !important;
+    border: none;
 }
 
 .container {
@@ -15,12 +52,13 @@
 }
 
 .name {
-    font-weight: 600;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'Popinss' !important;
 }
 
 .slide {
-    height: 350px;
+    height: 200px;
+    border-radius: 12px;
 }
 
 .title {
@@ -40,4 +78,12 @@
 
 .button-cart {
     width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: #00c2cb !important;
+}
+
+.button-cart:hover {
+    background-color: #FF9628 !important;
 }

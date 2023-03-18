@@ -1,7 +1,9 @@
 import {useEffect, useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import cart from './../Assets/cart.svg'
 import './../CSS/style.css';
+
 
 const Product = () => {
     const url = 'https://fakestoreapi.com/products';
@@ -44,7 +46,8 @@ function Cardproduct(props) {
           {props.desc}
           <p className='harga'>${props.price}</p>
         </Card.Text>
-        <Button variant="primary" className='button-cart'>Add to Cart</Button>
+        <Button className='button-cart'>
+          <img src= {cart}></img>Add to Cart</Button>
       </Card.Body>
     </Card>
   );
