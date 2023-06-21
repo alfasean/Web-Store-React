@@ -5,6 +5,7 @@ import Product from './Component/product.js'
 import Navbar from './Component/nav.js'
 import Hero from './Component/hero.js'
 
+
 function App() {
   return (
     <div>

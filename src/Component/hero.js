@@ -1,13 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 import slide1 from './../Assets/p3.webp'
 import slide2 from './../Assets/p5.webp'
-import slide3 from './../Assets/p2.webp'
+import slide3 from './../Assets/p2.png'
 import slide4 from './../Assets/p4.webp'
 import slide5 from './../Assets/p1.webp'
 
 function Hero() {
   return (
-    <Carousel>
+    <Carousel className='container py-2'>
       <Carousel.Item>
         <img
           className="d-block w-100 slide"
